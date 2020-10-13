@@ -1,0 +1,215 @@
+.rdl-control {
+    border: #468ccf double 3px;
+    border-radius: 10px;
+    -webkit-box-shadow: 5px 5px 10px -2px rgba(0, 0, 0, 0.53);
+    -moz-box-shadow: 5px 5px 10px -2px rgba(0, 0, 0, 0.53);
+    box-shadow: 5px 5px 10px -2px rgba(0, 0, 0, 0.53);
+}
+
+.sabu {
+    box-shadow: inset 0px 1px 0px 0px #bee2f9;
+    background: linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
+    border-radius: 6px;
+    border: 1px solid #2368c2;
+    display: inline-block;
+    cursor: pointer;
+    color: #14396a;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #7cacde;
+    margin: 10px;
+    text-align: -webkit-right;
+}
+
+.sabu:hover {
+    background: linear-gradient(to bottom, #468ccf 5%, #63b8ee 100%);
+}
+
+.sabu:active {
+    position: relative;
+    top: 1px;
+}
+
+.fa.fa-plus-circle {
+    align-self: auto;
+    margin-right: 5px;
+}
+
+.diusri .MuiChip-root {
+    background: linear-gradient(to bottom, #468ccf 5%, #63b8ee 100%);
+    margin-right: 10px;
+    border-radius: 10px;
+    color: black;
+}
+
+#id.MuiInputBase-input {
+    mso-row-margin-right: 50px;
+}
+
+div.MuiExpansionPanelDetails-root {
+    margin: auto;
+    border-bottom: double #468ccf 3px;
+    border-right: double #468ccf 3px;
+    border-left: double #468ccf 3px;
+    border-radius: 0 0 10px 10px;
+
+}
+
+p.MuiTypography-root.MuiTypography-body1 {
+    margin: auto;;
+    border-top: double #468ccf 3px;
+    border-right: double #468ccf 3px;
+    border-left: double #468ccf 3px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+
+.rdl-move {
+    box-shadow: inset 0 1px 0 0 #bee2f9;
+    background: linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
+    border-radius: 6px;
+    border: 1px solid #2368c2;
+    display: inline-block;
+    cursor: pointer;
+    color: #14396a;
+}
+
+.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary {
+    background-color: #63b8ee;
+    margin-top: 10px;
+}
+
+div.MuiChip-root {
+    background-color: #63b8ee;
+    margin-right: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+
+
+.header {
+    /*margin: auto;*/
+    width: 0%;
+}
+
+div.MuiInputBase-root.MuiFilledInput-root.MuiFilledInput-underline.MuiInputBase-formControl.MuiInputBase-marginDense.MuiFilledInput-marginDense {
+    padding: 1px;
+    font-size: 15px;
+    background: linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
+    color: #000000;
+    border-radius: 11px;
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, .53);
+    text-shadow: 0 0 5px rgba(0, 0, 0, .53);
+    margin-right: 150px;
+}
+
+div.ra-field {
+    padding: 1px;
+    font-size: 15px;
+    background: linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
+    color: #000000;
+    border-radius: 11px;
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, .53);
+    text-shadow: 0 0 5px rgba(0, 0, 0, .53);
+    margin-top: 10px;
+    width: 250px;
+    height: 60px;
+    text-align: center;
+}
+
+div.layout.RaLayout-root-1 {
+    margin-top: -50px;
+    height: 100%;
+}
+
+div.MuiDrawer-root.MuiDrawer-docked {
+    margin-top: -50px;
+    width : 10%;
+    /* background: linear-gradient(to bottom, #468ccf 5%, #63b8ee 100%); */
+    /* border: black solid 1px; */
+}
+
+div.RaLayout-content-4 {
+    display: flex;
+    padding: 8px 24px 24px;
+    flex-grow: 1;
+    flex-basis: 0;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #468ccf 5%, #63b8ee 100%);
+    margin-top: -50px;
+    height: 100%;
+}
+
+a.MuiButtonBase-root.MuiListItem-root {
+
+}
+
+div.layout.jss1 {
+    margin-top: -50px;
+    height: 100%;
+}
+
+.jss4 {
+    display: flex;
+    padding: 8px 24px 24px;
+    flex-grow: 1;
+    flex-basis: 0;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #468ccf 5%, #63b8ee 100%);
+    margin-top: -50px;
+    height: 100%;
+}
+
+div.MuiToolbar-root.MuiToolbar-regular {
+    margin: -5px;
+}
+
+.MuiPaper-root.MuiDrawer-paper.MuiDrawer-paperAnchorLeft.RaSidebar-drawerPaper-11.RaSidebar-drawerPaper-12.MuiPaper-elevation16 {
+    background: linear-gradient(to bottom, #468ccf 5%, #63b8ee 100%);
+}
+
+/*
+svg.MuiSvgIcon-root {
+   color: white;
+}
+*/
+
+.chat {
+    float: right;
+}
+
+.rsc {
+    top: 430px;
+    position: absolute;
+}
+
+.react-calendar{
+    position: absolute;
+    top: 160px;
+}
+
+/*  Scroll Bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #468ccf;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background:  linear-gradient(to bottom, #2196F3 5%, #b4daf7 100%);
+    border-radius: 5px;
+}
+
+
+.footer {
+    margin: auto;
+    width: 0%;
+}
+
