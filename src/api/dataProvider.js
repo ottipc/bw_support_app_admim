@@ -2,7 +2,7 @@ import {fetchUtils} from 'react-admin';
 import postgrestRestProvider from "@raphiniert/ra-data-postgrest";
 require('dotenv').config();
 
-export const API_URL = process.env.NODE_ENV === 'production' ? process.env.REACT_APP_PROD_API_URL : process.env.REACT_APP_DEV_API_URL;
+export const API_URL = "http://o.ssystems.de/api"
 
 
 /**
