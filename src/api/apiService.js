@@ -25,41 +25,29 @@ export const ApiService = (props) => {
  */
 
 const myApiService = {
+
+
+    persistPicForQuestion: function (question_id, filename) {
+        return dataProvider.update('user_question_answer', {
+            id: question_id,
+            data: { picture_path: "http://o.ssystems.de/images/" + filename},
+            previousData: { title: "previous title" }
+        });
+    },
+
+
     fetchRightIdsForRoles: function (roleIds) {
         return dataProvider.getManyOr('role_right', {
             id_role: roleIds
         });
     },
-    /**
-     *
-     * Insert//assign a relation of RoleRight.
-     *
-     * @param userRightIds
-     * @returns {*|Promise<unknown>}
-     */
-    fetchRightObjectsFOrId: function (userRightIds) {
-        return dataProvider.getManyOr('right', {
-            id: userRightIds
-        });
-    },
-
     uploadPic: function (formData, filename, config, question_id) {
         axios.post("http://o.ssystems.de:8079/uploadFile?name=" + filename, formData, config).then((response) => {
-            console.log("drin");
-            console.log(response);
-            console.log("File :" + filename)
-            //let data = {question_id : };
-            console.log("Create Entry To file : " + filename)
-            console.log("Question ID :" + question_id)
-
-            return dataProvider.create('files', {data: {"question_id" : question_id, "picture_path" : filename}})
-                .then(response => {
-                    // success side effects go here
-                    console.log(response);
-                })
-                .catch(error => {
-                    console.log(error);
-                });
+            return dataProvider.update('question', {
+                id: question_id,
+                data: { picture_path: "http://o.ssystems.de/images/" + filename},
+                previousData: { title: "previous title" }
+            });
         })
     },
 
@@ -79,30 +67,6 @@ const myApiService = {
     },
 */
 
-
-
-    /**
-     *  Getting all Roles for a specified user.
-     *
-     * @param userId
-     * @returns {Promise<GetListResult>}
-     */
-    fetchRoleListForUser: function (userId) {
-        return dataProvider.getList('user_role', {
-            pagination: {
-                page: 1,
-                perPage: 50
-            },
-            sort: {
-                field: 'id',
-                order: 'asc'
-            },
-            filter: {
-                id_user: userId
-            },
-        });
-    },
-
     /**
      * assign roles to User
      *
@@ -119,8 +83,10 @@ const myApiService = {
             });
     },
 
-
-
+    getPicturePath: function (id) {
+        return dataProvider
+            .getOne('question', {id: id})
+    },
 
     createUserRole: function (payload) {
         dataProvider

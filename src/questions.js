@@ -24,6 +24,7 @@ import './comp/comp.css'
 import Box from "@material-ui/core/Box";
 import FileUpload from "./comp/FileUpload";
 import {MyEdit} from "./myEdit";
+import {Image} from "@material-ui/icons";
 
 
 
@@ -67,11 +68,12 @@ export const QuestionCreate = (props) => (
     </Create>
 );
 
+const arecord = ({ record }) => {
+    return record
+};
 
-
-export const QuestionEdit = (props) => (
-
-    <MyEdit  {...props}>
+export const QuestionEdit = ({ record, ...props }) => (
+    <MyEdit {...props}>
         <SimpleForm>
             <div style={{width: '100%'}}>
                 <Box display="flex" flexDirection="row" p={1} m={1} bgcolor="background.paper">
@@ -79,12 +81,13 @@ export const QuestionEdit = (props) => (
                         <TextInput label="ID" disabled source="id"/>
                         <TextInput label="Text" source="text"/>
                         <TextInput label="Detail"  source="detail"/>
+                        <TextInput label="Picture Path"  source="picture_path"/>
                         <SelectInput source="language" choices={[
                             { id: 'DE', name: 'German' },
                             { id: 'EN', name: 'English' }
                         ]} />
-                        <FileUpload {...props}/>
                     </Box>
+                    <FileUpload record={record} {...props}/>
                 </Box>
 
             </div>
